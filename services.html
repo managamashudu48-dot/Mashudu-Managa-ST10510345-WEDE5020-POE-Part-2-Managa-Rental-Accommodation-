@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services - Managa Rental Accommodation</title>
+    
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -38,125 +40,92 @@
 
         <h2>Our Accommodation</h2>
 
-        <p>
-            Managa Rental Accommodation provide different accommodation options to meet the needs of our tenants.
-        </p>
+        <section>
+    <h2>Our Accommodation Services</h2>
 
-        <h2>Accommodation Options</h2>
+    <p>
+        Managa Rental Accommodation offers comfortable and convenient
+        accommodation options for students, families and working
+        professionals.
+    </p>
 
-        <table border="1">
+    <div class="services-container">
 
-            <tr>
-                <th>Accommodation</th>
-                <th>Bedrooms</th>
-                <th>Location</th>
-                <th>Suitable For</th>
-            </tr>
+        <div class="service-card">
+            
+            <picture>
+    <source
+        media="(max-width: 480px)"
+        srcset="images/accommodation-small.jpeg">
 
-            <tr>
-                <td>Student Room</td>
-                <td>1 Bedroom</td>
-                <td>Thohoyandou</td>
-                <td>Students</td>
-            </tr>
+    <source
+        media="(max-width: 768px)"
+        srcset="images/accommodation-medium.jpeg">
 
-            <tr>
-                <td>Family House</td>
-                <td>2 Bedrooms</td>
-                <td>Louis Trichardt</td>
-                <td>Families</td>
-            </tr>
+    <img
+        src="images/accommodation-large.jpeg"
+        srcset="
+            images/accommodation-small.jpeg 480w,
+            images/accommodation-medium.jpeg 800w,
+            images/accommodation-large.jpeg 1200w"
+        sizes="(max-width: 480px) 96vw,
+               (max-width: 768px) 94vw,
+               30vw"
+        alt="Student accommodation">
+</picture>
 
-            <tr>
-                <td>Professionals Unit</td>
-                <td>2 Bedrooms</td>
-                <td>Louis Trichardt</td>
-                <td>Professionals</td>
-            </tr>
+            <h3>Student Accommodation</h3>
 
-        </table>
+            <p>
+                Safe and affordable accommodation for students looking
+                for a comfortable place to stay.
+            </p>
+        </div>
 
-        <!--Accommodation Option 1-->
+        <div class="service-card">
+            <img src="images/accommodation.jpg.jpeg"
+                 alt="Family accommodation">
 
-        <h3>Student Accommodation</h3>
+            <h3>Family Accommodation</h3>
 
-        <p>
-            Our students accommodation provides a comfortable place for students who need convenient housing while studying. 
-        </p>
+            <p>
+                Comfortable and spacious accommodation suitable for
+                families and their everyday needs.
+            </p>
+        </div>
 
-        <ul>
-            <li>Comfortable rooms</li>
-            <li>Convenient kocation</li>
-            <li>Affordable rental options</li>
-            <li>Self-catering</li>
-            <li>Suitable for students</li>
-        </ul>
+        <div class="service-card">
+            <img src="images/accommodation-medium.jpeg"
+                 alt="Professional accommodation">
 
-        <!--Accommodation Option 2-->
+            <h3>Professional Accommodation</h3>
 
-        <h3>Family Accommodation</h3>
+            <p>
+                Convenient accommodation for working professionals
+                looking for a comfortable place to stay.
+            </p>
+        </div>
 
-        <p>
-            Our family accommodationprovides suitable libvinng spaces for families looking for a comfortable place to stay.
-        </p>
+    </div>
+</section>
 
-        <ul>
-            <li>Spacious living areas</li>
-            <li>Barcher apartment</li>
-            <li>2 Bedrooms apartment</li>
-            <li>Comfortable bedrooms</li>
-            <li>Suitable for families</li>
-            <li>Convenient facilities</li>
-        </ul>
+<section>
+    <h2>Our Services</h2>
 
-        <!--Accommodation Option 3-->
+    <ul>
+        <li>Comfortable accommodation options</li>
+        <li>Affordable rental options</li>
+        <li>Accommodation for students and families</li>
+        <li>Accommodation for working professionals</li>
+        <li>Easy accommodation enquiries</li>
+    </ul>
 
-        <h3>Professionals Accommodation</h3>
-
-        <p>
-            We offer accommodationoptions for working professionals who need a convenient and comfortable place to live.
-        </p>
-
-        <ul>
-            <li>Comfortable living spaces</li>
-            <li>Convenient locations</li>
-            <li>Flexible accommodation options</li>
-            <li>Suitable for working professionals</li>
-        </ul>
-
-        <h2>What We Provide</h2>
-
-        <ol>
-            <li>Accommodation enquiries</li>
-            <li>Property information</li>
-            <li>Rental information</li>
-            <li>Viewing arrangements</li>
-            <li>Tenant support</li>
-        </ol>
-
-        <h2>Interested in Our Accommodation</h2>
-
-        <h2>Why Choose Managa Rental Accommodation</h2>
-
-        <ul>
-            <li>Comfortable accommodation</li>
-            <li>Affordable rental options</li>
-            <li>Convenient locations</li>
-            <li>Suitable options for different tenants</li>
-            <li>Friendly and reliable service</li>
-        </ul>
-
-        <p>
-            If you are Interested in one of our accommodation options, you can make an enquiry using our enquiry form.
-        </p>
-
-        <p>
-
-            <a href="enquiry.html">
-                Make an Accommodation Enquiry
-            </a>
-
-        </p>
+    <p>
+        If you are interested in our accommodation, please visit our
+        <a href="enquiry.html">Enquiry page</a> to send us your requirements.
+    </p>
+</section>
+   
 
     </main>
 

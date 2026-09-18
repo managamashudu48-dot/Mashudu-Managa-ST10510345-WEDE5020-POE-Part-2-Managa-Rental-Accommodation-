@@ -56,11 +56,21 @@
 
     <figure>
 
+    <picture>
     <img 
-        src="c:\Users\Mashudu\OneDrive\Pictures\Screenshots\Managa Renntal Accommodation.jpeg"
+        src="images/accommodation-medium.jpeg"
+        srcset="
+            images/accommodation-small.jpeg.jpeg 480w,
+            images/accommodation-medium.jpeg 800w,
+            images/accommodation-large.jpeg 1200w
+        "
+        sizes="(max-width: 480px) 96vw,
+               (max-width: 768px) 94vw,
+               90vw"
+           
         alt="Managa Rental Accommodation"
-        width="500"
     >
+    </picture>  
 
     <figcaption>
         Comfortable and clean accommodation provided by Managa Rental Accommodation.
@@ -130,37 +140,46 @@
 
     <h3>Why Choose Managa Rental Accommodation?</h3>
 
-    <ul>
+    <section>
+    <h2>Why Choose Managa Rental Accommodation?</h2>
 
-        <li>Comfortable accommodation</li>
-        <li>Affordable rental options</li>
-        <li>Convenient locations</li>
-        <li>Friendly customer service</li>
-        <li>Easy ennquiry process</li>
+    <div class="features-container">
 
-    </ul>
+        <div class="feature-card">
+            <h3>🏠 Comfortable Accommodation</h3>
+            <p>
+                Enjoy clean, comfortable and convenient accommodation
+                designed to make you feel at home.
+            </p>
+        </div>
 
-    <h2>Get Started</h2>
+        <div class="feature-card">
+            <h3>💰 Affordable Prices</h3>
+            <p>
+                We provide accommodation options designed to suit
+                different budgets and needs.
+            </p>
+        </div>
 
-    <p>
-        If you are looking for accommodation, visit our services page or make an enquiry.
-    </p>
+        <div class="feature-card">
+            <h3>📍 Convenient Location</h3>
+            <p>
+                Our accommodation provides convenient access to
+                important services and nearby facilities.
+            </p>
+        </div>
 
-    <p>
-        <a href="services.html">
-            View Our Accommodation
-        </a>
+        <div class="feature-card">
+            <h3>⭐ Quality Service</h3>
+            <p>
+                We aim to provide friendly and reliable service
+                throughout your accommodation experience.
+            </p>
+        </div>
 
-    </p>
+    </div>
+</section>
 
-    <p>
-        <a href="enquiry.html">
-            Make an Enquiry
-        </a>
-
-    </p>
-
- </main>
 
  <!--Website Footer-->
 

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enquiry - Managa Rental Accommodation</title>
 
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -45,144 +47,58 @@
 
         <!--Enquiry Form-->
 
-        <form action="#" method="post">
+        <form>
 
-            <!--Full Name-->
+    <fieldset>
+        <legend>Personal Information</legend>
 
-            <label for="fullname">
-                Full Name:
-            </label>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
 
-            <br>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
 
-            <input
-                type="text"
-                id="fullname"
-                name="fullname"
-                required
-            >
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+    </fieldset>
 
-            <br><br>
+    <fieldset>
+        <legend>Accommodation Details</legend>
 
-            <!--Email-->
-
-            <label for="email">
-                Email Address
-            </label>
-
-            <br>
-
-            <input
-               type="email"
-               id="email"
-               name="email"
-               required
-            >
-
-            <br><br>
-
-            <!--Phone-->
-
-            <label for="phone">
-                Phone Number:
-            </label>
-
-            <br>
-
-            <input
-               type="tel"
-               id="phone"
-               name="phone"
-            >
-
-            <br><br>
-
-            <!--Accommodation Type-->
-
-            <label for="accommodation">
-                Accommodation Type:
-            </label>
-
-            <br>
-
-
-            <select
-               id="accommodation"
-               name="accommodation"
-            >
-
-            <option value="">
-                --Select an option--
-            </option>
-
-            <option value="Student">
-                Student Accommodation
-            </option>
-
-            <option value="Family">
-                Family Accommodation
-            </option>
-
-            <option value="professionals">
-                Professionals Accommodation
-            </option>
-
+        <label for="accommodation">Accommodation Type:</label>
+        <select id="accommodation" name="accommodation" required>
+            <option value="">Select an option</option>
+            <option value="student">Student Accommodation</option>
+            <option value="family">Family Accommodation</option>
+            <option value="professional">Professional Accommodation</option>
         </select>
 
-        <br><br>
+        <label for="bedrooms">Number of Bedrooms:</label>
+        <select id="bedrooms" name="bedrooms">
+            <option value="">Select number of bedrooms</option>
+            <option value="1">1 Bedroom</option>
+            <option value="2">2 Bedrooms</option>
+            <option value="3">3 Bedrooms</option>
+            <option value="4">4 Bedrooms</option>
+        </select>
 
-        <!--Preferred Move-in Date-->
+        <label for="movein">Preferred Move-in Date:</label>
+        <input type="date" id="movein" name="movein">
+    </fieldset>
 
-        <label for="Move-in">
-            Preferred Move-in Date:
-        </label>
+    <fieldset>
+        <legend>Additional Information</legend>
 
-        <br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"
+            placeholder="Tell us about your accommodation requirements..."></textarea>
+    </fieldset>
 
-        <input
-           type="date"
-           id="Move-in"
-           name="Move-in"
-        
-        >
+    <input type="submit" value="Submit Enquiry">
+    <input type="reset" value="Clear Form">
 
-        <br><br>
-
-        <!--Message-->
-
-
-        <label for="message">
-            Your Enquiry:
-        </label>
-
-        <br>
-
-        <textarea
-            id="message"
-            name="message"
-            rows="6"
-            cols="40"
-            placeholder="Tell us what accommodation you are looking for..."
-        ></textarea>
-
-        <br><br>
-
-        <!--Submit Button-->
-
-        <input
-           type="submit"
-           value="Submit Enquiry"
-        >
-
-        <!--Reset Button-->
-
-        <input
-           type="reset"
-           value="Clear Form"
-        >
-         
-        </form>
-
+</form>
+  
     </main>
 
     <!--Footer-->
